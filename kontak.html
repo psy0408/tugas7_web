@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="WhatsApp_Image_2024-08-21_at_08.49.45-removebg-preview.png"
+            alt="Bootstrap"
+            width="34"
+            height="30"
+          />
+        </a>
+        <a class="navbar-brand" href="#"><span style="color: #90EE90; font-family: 'Times New Roman', Times, serif;">Aerial</span>Tourism</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Click Here
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="vacation.html">Vacation</a></li>
+                <li><a class="dropdown-item" href="galeri.html">Gallery</a></li>
+                <li><hr class="dropdown-divider" /></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<header class="bg-success py-5">
+    <div class="container">
+      <h1 class="text-white">Contact Us</h1>
+      <p class="text-white lead">Get in touch with us for any questions or feedback</p>
+    </div>
+  </header>
+  
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2 class="mb-4">Send Us a Message</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" placeholder="Your Message"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Criticism and Suggestions</label>
+              <textarea class="form-control" id="message" placeholder="Your Message"></textarea>
+            </div>
+            <form id="booking-form">
+        
+                <button type="submit" class="btn btn-primary" id="book-now">Send Message</button>
+              </form>
+
+              <!-- Map -->
+    <div class="container my-5">
+      <h4 class="text-center">Our Office Location</h4>
+      <div class="map-container" style="margin: 0 auto; width: 85%;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.3673727153455!2d11.622132475631224!3d48.21880014550416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e7385128a251f%3A0xed4d60428e32c423!2sAllianz%20Arena!5e0!3m2!1sid!2sid!4v1724676837790!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </div>
+              
+              <script>
+                document.getElementById('book-now').addEventListener('click', function(event) {
+                  event.preventDefault();
+                  var name = document.getElementById('name').value;
+                  var email = document.getElementById('email').value;
+                  var message = document.getElementById('message').value;
+              
+                  if (name && email && message) {
+                    alert('We have received your message');
+                  } else {
+                    alert('Please fill in all fields');
+                  }
+                });
+              </script>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="bg-white py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <h2 class="mb-4">Contact Information</h2>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt"></i> Address: Allianz Arena</li>
+            <li><i class="fas fa-phone"></i> Phone: 555-699-5555</li>
+            <li><i class="fas fa-envelope"></i> Email: aerialtour@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h2 class="mb-4">Follow Us</h2>
+          <ul class="list-unstyled">
+            <li><i class="fab fa-facebook-f"></i> Facebook</li>
+            <li><i class="fab fa-twitter"></i> Twitter</li>
+            <li><i class="fab fa-instagram"></i> Instagram</li>
+            <p><h6>Just Gimmick</h6></p>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer mt-auto py-3 bg-dark">
+    <div class="container">
+      <p class="text-light">Copyright 2024 Aerial Tourism. All rights reserved!!</p>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link text-light" href="latboots.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="galeri.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="kontak.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  </body>
+</html>
